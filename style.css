@@ -1,0 +1,84 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        #phrase-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin: 20px;
+        }
+
+      .word-container {
+            display: flex;
+            gap: 10px;
+        }
+
+        .letter-box {
+            width: 40px;
+            height: 40px;
+            border: 2px solid #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+        }
+
+        #input-container {
+            margin: 20px;
+        }
+
+        #input-container input {
+            padding: 10px;
+            font-size: 18px;
+        }
+        #alphabet-container {
+            margin: 20px;
+            display: grid;
+            grid-template-columns: repeat(9, 1fr); /* Create a 5x5 grid */
+            gap: 5px;
+        }
+        .alphabet-box {
+            width: 40px;
+            height: 40px;
+            border: 2px solid #efefef;
+          border-radius: 15px;
+            color: #5a5a5c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+     .alphabet-box.disabled {
+            pointer-events: none;
+            background-color: #fadbd4;
+        }
+
+    .alphabet-box.green {
+            background-color: #defce6;
+        }
+        #finish-btn {
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        #discarded-letters {
+            margin-top: 20px;
+            font-size: 18px;
+            color: red;
+        }
+
+
+/* Hide the phrase input container initially */
+        #phrase-input-container {
+            display: inline-block;
+        }
+ 
