@@ -10,17 +10,19 @@
     
 </head>
 <body>
-    <h1>Wheel of Fortune</h1>
-<div>
-        <select id="category-dropdown"></select>
-        <div id="phrase-input-container">
-            <label for="phrase-input">Enter a phrase: </label>
-            <input type="text" id="phrase-input">
-        </div>
-        <button onclick="startGame()">Start Game</button>
+  <h1>Wheel of Fortune</h1>
+  <div>
+    <div id="game-controls">
+      <select id="category-dropdown"></select>
+      <div id="phrase-input-container">
+        <label for="phrase-input">Enter a phrase: </label>
+        <input type="text" id="phrase-input">
+      </div>
+      <button id="startbutton" onclick="startGame()">Start Game</button>
     </div>
-    <div id="phrase-container"></div>
-    <div id="alphabet-container"></div>
+  </div>
+  <div id="phrase-container"></div>
+  <div id="alphabet-container"></div>
   <!--
     <div id="input-container">
         <label for="letter-input">Guess a letter: </label>
@@ -28,10 +30,10 @@
         <button onclick="guessLetter()">Submit</button>
     </div> -->
 
-    <button id="finish-btn" onclick="revealPhrase()">Finish</button>
+  <button id="finish-btn" onclick="revealPhrase()">Finish</button>
 
-    <div id="discarded-letters">Discarded Letters: </div>
+  <div id="discarded-letters">Discarded Letters: </div>
 
-    
 </body>
+
 </html>
