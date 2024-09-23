@@ -4,7 +4,7 @@ let discardedLetters = [];
 const symbols = [",", ";", "-", "!", "?", ".", ":", '"', "'","(",")","#"];
 const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789".split("");
 const categories1 = ["Custom", "Random"];
-const categories2 = ["tvshows", "movies", "countries","capitals","moods"];
+const categories2 = ["tvshows", "movies", "countries","capitals","moods","occupation"];
 const categories = categories1.concat(categories2);
 
 // Dynamically add categories to the dropdown
@@ -34,7 +34,7 @@ function populateDropdown() {
 
 
 function startGame() {
-  const category = [tvshows, movies, countries,capitals,moods];
+  const category = [tvshows, movies, countries,capitals,moods,occupation];
   var selection = "";
   phrase = "";
   const selectedCategory = document.getElementById("category-dropdown").value;
